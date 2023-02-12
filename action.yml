@@ -1,4 +1,4 @@
-name: 'Notion To JSON/YML File'
+name: 'Notion To Static File'
 description: 'Reads from a Notion Database and auto generates a JSON/YML file'
 inputs:
   notion-token:
@@ -15,6 +15,10 @@ inputs:
     required: false
   ignore-columns:
     description: 'If any, ignore the columns specified by name'
+    required: false
+  body-format:
+    description: 'If any, include the notion page body with none, markdown or html options'
+    default: 'none'
     required: false
   keys-camelcase:
     description: 'Keys camelCase'
